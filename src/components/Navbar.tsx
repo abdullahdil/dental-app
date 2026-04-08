@@ -26,10 +26,10 @@ export default function Navbar() {
           {/* Desktop Nav */}
           <div className="hidden md:flex items-center space-x-8">
             <Link href="/services" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Services</Link>
-            <Link href="#about" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">About Us</Link>
-            <Link href="#testimonials" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Testimonials</Link>
-            <Link href="#contact" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Contact</Link>
-            <a href="#appointment" className="bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-blue-700 transition-all shadow-md shadow-blue-500/30 flex items-center gap-2">
+            <Link href="/#about" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">About Us</Link>
+            <Link href="/#testimonials" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Testimonials</Link>
+            <Link href="/#contact" className="text-sm font-medium text-slate-700 hover:text-blue-600 transition-colors">Contact</Link>
+            <a href="/#appointment" className="bg-blue-600 text-white px-5 py-2.5 rounded-full font-medium text-sm hover:bg-blue-700 transition-all shadow-md shadow-blue-500/30 flex items-center gap-2">
               <Phone size={16} />
               Book Appointment
             </a>
@@ -46,10 +46,10 @@ export default function Navbar() {
       {isMobileMenuOpen && (
         <div className="md:hidden glass absolute top-full left-0 w-full border-t border-slate-200/50 flex flex-col p-4 shadow-lg backdrop-blur-xl bg-white/90">
           <Link href="/services" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium border-b border-slate-100">Services</Link>
-          <Link href="#about" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium border-b border-slate-100">About Us</Link>
-          <Link href="#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium border-b border-slate-100">Testimonials</Link>
-          <Link href="#contact" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium">Contact</Link>
-          <a href="#appointment" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-blue-600 text-white py-3 rounded-xl font-medium text-center flex items-center justify-center gap-2">
+          <Link href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium border-b border-slate-100">About Us</Link>
+          <Link href="/#testimonials" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium border-b border-slate-100">Testimonials</Link>
+          <Link href="/#contact" onClick={() => setIsMobileMenuOpen(false)} className="py-3 px-4 text-slate-700 font-medium">Contact</Link>
+          <a href="/#appointment" onClick={() => setIsMobileMenuOpen(false)} className="mt-4 bg-blue-600 text-white py-3 rounded-xl font-medium text-center flex items-center justify-center gap-2">
             <Phone size={18} />
             Book Appointment
           </a>
